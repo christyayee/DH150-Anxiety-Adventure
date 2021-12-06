@@ -9,7 +9,7 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play final project.</tw-noscript></noscript></tw-story>
-<tw-storydata name="final project" startnode="1" creator="Twine" creator-version="2.3.15" ifid="CF34BCB6-4FF7-4DA0-B297-0EED521022CB" zoom="0.25" format="Harlowe" format-version="3.2.3" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-story {
+<tw-storydata name="final project" startnode="1" creator="Twine" creator-version="2.3.15" ifid="CF34BCB6-4FF7-4DA0-B297-0EED521022CB" zoom="0.6" format="Harlowe" format-version="3.2.3" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-story {
   font-family: montserrat, sans-serif;
   font-size: 3vw;
   font-size: 3vh;
@@ -32,7 +32,7 @@ tw-story[tags~="therapy"] {
 
 a:visited {
   color: darkblue;
-}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="intro" tags="" position="2006,99" size="100,100">(alert: &quot;Hello! The game you are about to play depicts one person&#39;s experience with generalized anxiety disorder. However, everyone who has anxiety has their own unique experiences, and the game&#39;s depiction is only one example. It is not representative or all-encompassing of all aspects of anxiety, its symptoms, or its outcomes. If you believe you are suffering from severe anxiety, recieving treatment from a mental health professional is highly encouraged before continuing. &quot;)
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="intro" tags="" position="2006,99" size="100,100">(alert: &quot;Hello! Inspired by Depression Quest by Zoë Quinn, the game you are about to play depicts one person&#39;s experience with generalized anxiety disorder. However, everyone who has anxiety has their own unique experiences, and the game&#39;s depiction is only one example. It is not representative or all-encompassing of all aspects of anxiety, its symptoms, or its outcomes. If you believe you are suffering from severe anxiety, recieving treatment from a mental health professional is highly encouraged before continuing. &quot;)
 (text-style:&quot;fidget&quot;)[You are a student at a good school. You have great grades and close friends and are overall, outwardly successful. You have no reason to be anything other than proud and content.] 
 
 (text-style:&quot;fidget&quot;)[Everyday, however, you feel silently burdened by the constant stream of deadlines, and lose sleep over struggling to balance keeping up with your schoolwork and finding time for the things you enjoy.]
@@ -42,7 +42,10 @@ a:visited {
 [[Begin...|phase1]]
 (set: $points to 0) 
 (set: $lastGrounded to false) 
-</tw-passagedata><tw-passagedata pid="2" name="phase1" tags="" position="1997,246" size="100,100">(text-style:&quot;fidget&quot;)[It&#39;s Sunday, but you have a busy week ahead. You&#39;ve got a homework assignment due tomorrow, an exam, a project, and an interview all within the next few days.]
+</tw-passagedata><tw-passagedata pid="2" name="phase1" tags="" position="1998.6666666666667,246" size="100,100">(if:(history: where its name contains &quot;phase2&quot;)&#39;s length &gt;= 1)[Two weeks later...]
+
+
+(text-style:&quot;fidget&quot;)[It&#39;s Sunday, but you have a busy week ahead. You&#39;ve got a homework assignment due tomorrow, an exam, a project, and an interview all within the next few days.]
 
 (text-style:&quot;fidget&quot;)[You are really (text-style:&quot;fidget&quot;)[stressed] about everything you have to do, and when you&#39;ll find time to do everything. You plan to have a productive night to get a head start on your work for the week.] 
 
@@ -53,7 +56,7 @@ a:visited {
 
 
 (text-style:&quot;rumble&quot;)[[[Relax and watch the movies with your friends.|relax]]]
-(text-style:&quot;shudder&quot;)[[[Stay home and watch lecture.|stay]]]</tw-passagedata><tw-passagedata pid="3" name="relax" tags="" position="1922,477" size="100,100">(text-style:&quot;fidget&quot;)[Relax and watch the movies with your friends.]
+(text-style:&quot;shudder&quot;)[[[Stay home and watch lecture.|stay]]](if:(history: where its name contains &quot;phase2&quot;)&#39;s length &gt;= 1)[Your Text Here]</tw-passagedata><tw-passagedata pid="3" name="relax" tags="" position="1922,477" size="100,100">(text-style:&quot;fidget&quot;)[Relax and watch the movies with your friends.]
 
 
 (text-style:&quot;fidget&quot;)[You decide to have fun in the moment before the real grind of the week starts tomorrow. You text your friend back that you&#39;ll be there in 30 minutes, and you go watch a movie to unwind.]
@@ -330,19 +333,19 @@ If the interactive story has resonated with you, or reminds you of anyone in you
 
 
 
-[[Next... |initial]]</tw-passagedata><tw-passagedata pid="25" name="initial" tags="" position="2051.6666666666665,2049.3333333333335" size="100,100">(text-style:&quot;fidget&quot;)[At the initial appointment, the goal is for your therapist to ask and learn about your current situation, your background, and your goals. After you tell her about yourself and how you&#39;ve been doing lately, your therapist confirms what you&#39;re experiencing aligns with symptoms of generalized anxiety. She is nonjudgmental and reassuring. She explains that through therapy, she can offer you positive coping mechanisms and help you foster lifestyle changes that help build resiliency against your stresses.]
+[[Next... |initial]]</tw-passagedata><tw-passagedata pid="25" name="initial" tags="" position="2051,2049" size="100,100">(text-style:&quot;fidget&quot;)[At the initial appointment, the goal is for your therapist to ask and learn about your current situation, your background, and your goals. After you tell her about yourself and how you&#39;ve been doing lately, your therapist confirms what you&#39;re experiencing aligns with symptoms of generalized anxiety. She is nonjudgmental and reassuring. She explains that through therapy, she can offer you positive coping mechanisms and help you foster lifestyle changes that help build resiliency against your stresses.]
 
 (text-style:&quot;fidget&quot;)[You are feeling much more positive and hopeful than you felt before your session.]
 
 
-[[Next...|traps]] </tw-passagedata><tw-passagedata pid="26" name="study" tags="" position="2045.3333333333335,2925.3333333333335" size="100,100">(text-style:&quot;fidget&quot;)[You are studying for your midterm with friends in an effort to break out of your bad habit of self-isolating. During a study break, everyone is ranting about how tired and stressed they are from studying, including you. Suddenly, a friend invalidates your own stresses because of how well you do in school, and flippantly comments that you are not allowed to complain.]
+[[Next...|traps]] </tw-passagedata><tw-passagedata pid="26" name="study" tags="" position="2045,2925" size="100,100">(text-style:&quot;fidget&quot;)[You are studying for your midterm with friends in an effort to break out of your bad habit of self-isolating. During a study break, everyone is ranting about how tired and stressed they are from studying, including you. Suddenly, a friend invalidates your own stresses because of how well you do in school, and flippantly comments that you are not allowed to complain.]
 
 
 (text-style:&quot;shudder&quot;)[[You feel guilty. | guilty]] 
 (if:(history: where its name contains &quot;guilt&quot;)&#39;s length &gt;= 1)+(text-style:&quot;rumble&quot;)[[[Shake of their comments. | shake it off]]](else:)+(text-colour:grey)[**~~Shake of their comments.~~**]
 
 
-(set:$studyNext to false)</tw-passagedata><tw-passagedata pid="27" name=" guilty" tags="" position="1954.3333333333333,3075.3333333333335" size="100,100">(text-style:&quot;fidget&quot;)[You feel guilty.]
+(set:$studyNext to false)</tw-passagedata><tw-passagedata pid="27" name=" guilty" tags="" position="1954,3075" size="100,100">(text-style:&quot;fidget&quot;)[You feel guilty.]
 
 
 (text-style:&quot;fidget&quot;)[You agree and apologize. You feel incredibly guilty for ever talking about it, and even feeling so stressed in the first place since you know many others have it worse than you. You feel guilty for ever feeling bad about your situation since you realize you are more priviledged than most. ]
@@ -350,7 +353,7 @@ If the interactive story has resonated with you, or reminds you of anyone in you
 
 
 [[Next...|night before]]
-(set: $points to it - 1)</tw-passagedata><tw-passagedata pid="28" name=" shake it off" tags="" position="2150.3333333333335,3073.3333333333335" size="100,100">(text-style:&quot;fidget&quot;)[You shake it off.]
+(set: $points to it - 1)</tw-passagedata><tw-passagedata pid="28" name=" shake it off" tags="" position="2150,3073" size="100,100">(text-style:&quot;fidget&quot;)[You shake it off.]
 
 
 (text-style:&quot;fidget&quot;)[You apologize for complaining and being insensitive, but internally you shake off their comments. You remember the advice your therapist gave you when you brought up your concerns over your guilt. You try your best to treat yourself with the same compassion as you would with another friend. You reaffirm to yourself that your stresses are justified, and the hardships of others don&#39;t invalidate your own.] 
@@ -358,18 +361,18 @@ If the interactive story has resonated with you, or reminds you of anyone in you
 
 
 [[Next...|night before]]
-(set: $points to it + 1)</tw-passagedata><tw-passagedata pid="29" name="night before" tags="" position="2051.6666666666665,3202.3333333333335" size="100,100">(text-style:&quot;fidget&quot;)[The night before your midterm, you&#39;ve studied and covered all the material that you aimed to. You decide to...]
+(set: $points to it + 1)</tw-passagedata><tw-passagedata pid="29" name="night before" tags="" position="2051,3202" size="100,100">(text-style:&quot;fidget&quot;)[The night before your midterm, you&#39;ve studied and covered all the material that you aimed to. You decide to...]
 
 
 
 (text-style:&quot;shudder&quot;)[[go to bed. You want to feel rested before your midterm in the morning.|post-midterm]]
 (text-style:&quot;rumble&quot;)[(link: &quot;study in bed until you fall asleep.&quot;)[(set: $points to it - 1)(goto: &quot;post-midterm&quot;)]]
-(if:(history: where its name contains &quot;tips&quot;)&#39;s length &gt;= 1)+(text-style:&quot;shudder&quot;)[(link: &quot;write out your daily gratitudes before bed as your therapist suggested.&quot;)[(set: $points to it + 1)(goto: &quot;post-midterm&quot;)]]</tw-passagedata><tw-passagedata pid="30" name="post-midterm" tags="" position="2301.3333333333335,3123.333333333333" size="100,100">(text-style:&quot;fidget&quot;)[The next day, after your midterm, you have your next therapy appointment.]
+(if:(history: where its name contains &quot;tips&quot;)&#39;s length &gt;= 1)+(text-style:&quot;shudder&quot;)[(link: &quot;write out your daily gratitudes before bed as your therapist suggested.&quot;)[(set: $points to it + 1)(goto: &quot;post-midterm&quot;)]]</tw-passagedata><tw-passagedata pid="30" name="post-midterm" tags="" position="2301,3123" size="100,100">(text-style:&quot;fidget&quot;)[The next day, after your midterm, you have your next therapy appointment.]
 
 
 
 [[Next...|therapy]]
-(set: $askMore to false)</tw-passagedata><tw-passagedata pid="31" name="tips" tags="" position="2051.666666666666,2347" size="100,100">(text-style:&quot;fidget&quot;)[At the end of your session, your therapist gives you tips on healthy habits to try to incorporate into your life to help you start slowly building resilience against stress, including:]
+(set: $askMore to false)</tw-passagedata><tw-passagedata pid="31" name="tips" tags="" position="2051,2347" size="100,100">(text-style:&quot;fidget&quot;)[At the end of your session, your therapist gives you tips on healthy habits to try to incorporate into your life to help you start slowly building resilience against stress, including:]
 &lt;ul&gt;
 	&lt;li&gt; (text-style:&quot;fidget&quot;)[taking time to write out daily gratitudes to train your brain to focus on the positives in life instead of dwelling on the negatives.]&lt;/li&gt;
 	&lt;li&gt; (text-style:&quot;fidget&quot;)[reminding yourself of something that you are looking forward to whenever you are stressed or dreading something in the future.]&lt;/li&gt;
@@ -378,14 +381,14 @@ If the interactive story has resonated with you, or reminds you of anyone in you
 &lt;/ul&gt;
 
 
-[[Next...|schedule]]</tw-passagedata><tw-passagedata pid="32" name="panic" tags="" position="3097.6666666666665,3056" size="100,100">(text-style:&quot;fidget&quot;)[A few days later, your midterm scores are released. You did significantly worse than you were expecting.]
+[[Next...|schedule]]</tw-passagedata><tw-passagedata pid="32" name="panic" tags="" position="3097,3056" size="100,100">(text-style:&quot;fidget&quot;)[A few days later, your midterm scores are released. You did significantly worse than you were expecting.]
 
 
 (text-style:&quot;fidget&quot;)[You feel your heart rate rising. It&#39;s pounding and racing so fast you can hear it. Suddenly, it feels like there&#39;s a weight on your chest and it becomes more difficult to breathe.] 
 
 
 (if:(history: where its name contains &quot;physical&quot;)&#39;s length &gt;= 1)+(text-style:&quot;shudder&quot;)[(link: &quot;You use the grounding techniques you learned from your therapist to calm yourself down discreetly where you are.&quot;)[(set: $points to it + 1)(goto: &quot;offer&quot;)]]
-(text-style:&quot;rumble&quot;)[[You quickly excuse yourself from where you are to go to the bathroom and wait the panic attack out.|offer]]</tw-passagedata><tw-passagedata pid="33" name="offer" tags="" position="3097.333333333333,3206" size="100,100">(text-style:&quot;fidget&quot;)[You successfully survive through and recover from your panic attack.] 
+(text-style:&quot;rumble&quot;)[[You quickly excuse yourself from where you are to go to the bathroom and wait the panic attack out.|offer]]</tw-passagedata><tw-passagedata pid="33" name="offer" tags="" position="3097,3206" size="100,100">(text-style:&quot;fidget&quot;)[You successfully survive through and recover from your panic attack.] 
 
 
 (text-style:&quot;fidget&quot;)[Before your next scheduled therapy session, you learn that you got an offer for the position you interviewed for! You are ecstatic and relieved. By far, the biggest stress trigger in your life has been the pressure to find a job. Now, a huge weight has been lifted off your shoulders, and you feel your stress melt away.]
@@ -396,7 +399,7 @@ If the interactive story has resonated with you, or reminds you of anyone in you
 
 
 (text-style:&quot;shudder&quot;)[(link: &quot;cancel your next therapy appointment now that your biggest stressor is gone.&quot;)[(set: $points to it - 1)(goto: &quot;phase1&quot;)]]
-(if:$points &gt; 2)[(text-style:&quot;rumble&quot;)[[keep your next therapy appointment anyways to continue learning how to manage your stress better.|DONE]]](else:)[(text-colour:grey)[**~~keep your next therapy appointment anyways to continue learning how to manage your stress better.~~**]]</tw-passagedata><tw-passagedata pid="34" name="DONE" tags="" position="3100.9999999999995,3352" size="100,100">As you continue to apply the advice you learn in therapy, you slowly but surely begin to see a change in your outlook. 
+(if:$points &gt; 2)[(text-style:&quot;rumble&quot;)[[keep your next therapy appointment anyways to continue learning how to manage your stress better.|DONE]]](else:)[(text-colour:grey)[**~~keep your next therapy appointment anyways to continue learning how to manage your stress better.~~**]]</tw-passagedata><tw-passagedata pid="34" name="DONE" tags="" position="3100,3352" size="100,100">As you continue to apply the advice you learn in therapy, you slowly but surely begin to see a change in your outlook. 
 
 (if:(history: where its name contains &quot;phase1&quot;)&#39;s length &gt; 1)[Although you&#39;ve quit therapy before, you learned your lesson that anxiety cannot be cured by any level of success.] You realize that therapy is not easy, nor is it an immediate fix. It requires active engagement and is a continuous commitment you have to make to take care of yourself. 
 
@@ -414,7 +417,7 @@ Vulnerability and self-reflection are key to acknowledging a desire for better m
 
 To learn more how about the cognitive distortions, grounding techniques and coping mechanisms discussed in therapy to help anxiety, check out the following links:
 * &lt;a href=&#39;https://www.helpguide.org/articles/anxiety/therapy-for-anxiety-disorders.htm&#39; target=&#39;_blank&#39;&gt;Therapy for Anxiety Disorders&lt;/a&gt;
-&lt;a href=&#39;https://www.verywellmind.com/cognitive-distortions-and-anxiety-1393157&#39; target=&#39;_blank&#39;&gt;Cognitive Distortions in Generalized Anxiety Disorder&lt;/a&gt;
+* &lt;a href=&#39;https://www.verywellmind.com/cognitive-distortions-and-anxiety-1393157&#39; target=&#39;_blank&#39;&gt;Cognitive Distortions in Generalized Anxiety Disorder&lt;/a&gt;
 * &lt;a href=&#39;https://choosementalhealth.org/25-grounding-techniques-for-anxiety/&#39; target=&#39;_blank&#39;&gt;25 Grounding Techniques for Anxiety&lt;/a&gt;
 * &lt;a href=&#39;https://adaa.org/tips&#39; target=&#39;_blank&#39;&gt;Tips to Manage Anxiety and Stress&lt;/a&gt;
 
@@ -424,7 +427,7 @@ If the interactive story has resonated with you, or reminds you of anyone in you
 * &lt;a href=&#39;https://www.hhs.gov/answers/mental-health-and-substance-abuse/what-are-the-five-major-types-of-anxiety-disorders/index.html&#39; target=&#39;_blank&#39;&gt;What Are the Five Major Types of Anxiety Disorders?&lt;/a&gt;
 * &lt;a href=&#39;https://www.verywellmind.com/what-is-high-functioning-anxiety-4140198&#39; target=&#39;_blank&#39;&gt;The Characteristics of High Functioning Anxiety&lt;/a&gt;
 * &lt;a href=&#39;https://www.anxiety.org/how-to-find-a-therapist-to-treat-your-anxiety-disorder&#39; target=&#39;_blank&#39;&gt;How to Find a Therapist to Treat Your Anxiety Disorder&lt;/a&gt;
-* &lt;a href=&#39;https://www.samhsa.gov/find-help/national-helpline&#39; target=&#39;_blank&#39;&gt;SAMHSA&#39;S National Mental Health Hotline&lt;/a&gt;</tw-passagedata><tw-passagedata pid="35" name="schedule" tags="" position="2048.3333333333335,2501.333333333333" size="100,100">(if:(history: where its name contains &quot;therapy&quot;)&#39;s length &lt; 1)+(text-style:&quot;fidget&quot;)[Before you leave, your therapist asks when you&#39;d like to schedule your next therapy appointment. You decide to...](else:)+(text-style:&quot;fidget&quot;)[When you make your next therapy appointment, you decide to...]
+* &lt;a href=&#39;https://www.samhsa.gov/find-help/national-helpline&#39; target=&#39;_blank&#39;&gt;SAMHSA&#39;S National Mental Health Hotline&lt;/a&gt;</tw-passagedata><tw-passagedata pid="35" name="schedule" tags="" position="2048,2501" size="100,100">(if:(history: where its name contains &quot;therapy&quot;)&#39;s length &lt; 1)+(text-style:&quot;fidget&quot;)[Before you leave, your therapist asks when you&#39;d like to schedule your next therapy appointment. You decide to...](else:)+(text-style:&quot;fidget&quot;)[When you make your next therapy appointment, you decide to...]
 
 
 
@@ -443,13 +446,13 @@ After class, you feel your stomach grumbling.
 [[Message your friend to grab lunch together.|lunch]]
 (set: $points to it + 1) 
 (set: $lastGrounded to true) 
-</tw-passagedata><tw-passagedata pid="37" name="therapy" tags="" position="2800.333333333333,2502.3333333333335" size="100,100">(if: $askMore is false)+(text-style:&quot;fidget&quot;)[At your next therapy appointment, you update your therapist on how you&#39;ve been feeling recently, what has stressed you out lately, how you&#39;ve reacted to stresses, and how you feel about yourself.](else:)+(text-style:&quot;fidget&quot;)[At your current therapy appointment, you&#39;ve updated your therapist on how you&#39;ve been feeling recently, what has stressed you out lately, how you&#39;ve reacted to stresses, and how you feel about yourself.]
+</tw-passagedata><tw-passagedata pid="37" name="therapy" tags="" position="2800,2502" size="100,100">(if: $askMore is false)+(text-style:&quot;fidget&quot;)[At your next therapy appointment, you update your therapist on how you&#39;ve been feeling recently, what has stressed you out lately, how you&#39;ve reacted to stresses, and how you feel about yourself.](else:)+(text-style:&quot;fidget&quot;)[At your current therapy appointment, you&#39;ve updated your therapist on how you&#39;ve been feeling recently, what has stressed you out lately, how you&#39;ve reacted to stresses, and how you feel about yourself.]
 
 
 (text-style:&quot;shudder&quot;)[[Open up about feeling exhausted.|exhaustion]]
 (text-style:&quot;rumble&quot;)[[Open up about feeling guilty.|guilt]]
 (text-style:&quot;shudder&quot;)[[Ask for advice on how to manage physical symptoms of anxiety.|physical]]
-(text-style:&quot;rumble&quot;)[[[Thank her for her time and the talk.|end session]]]</tw-passagedata><tw-passagedata pid="38" name="exhaustion" tags="" position="2650.6666666666665,2751" size="100,100">(text-style:&quot;fidget&quot;)[You open up about how you feel exhausted by your anxiety. You are always stressed about many things at once even on slow days. You often feel frustrated, ashamed, and weak because you are unable to handle stressful sitations, or even standard tasks as easily as everyone else.]
+(text-style:&quot;rumble&quot;)[[[Thank her for her time and the talk.|end session]]]</tw-passagedata><tw-passagedata pid="38" name="exhaustion" tags="" position="2650,2751" size="100,100">(text-style:&quot;fidget&quot;)[You open up about how you feel exhausted by your anxiety. You are always stressed about many things at once even on slow days. You often feel frustrated, ashamed, and weak because you are unable to handle stressful sitations, or even standard tasks as easily as everyone else.]
 
 
 (text-style:&quot;fidget&quot;)[In response, your therapist informs you that anxiety is the most common mental illness in the US, and that you are not alone or worse than anyone else. Anxiety affects 18.1% of the population, but only 36.9% of those receive treatment, so the fact that you are here in therapy at all is a bigger step than most in your shoes take.]
@@ -477,7 +480,7 @@ After class, you feel your stomach grumbling.
 
 &lt;a href=&#39;https://adaa.org/understanding-anxiety/facts-statistics#:~:text=Anxiety%20disorders%20are%20the%20most,of%20the%20population%20every%20year&#39; target=&#39;_blank&#39;&gt;Facts and Statistics&lt;/a&gt;
 (set: $points to it + 1)
-(set: $askMore to true)</tw-passagedata><tw-passagedata pid="39" name="guilt" tags="" position="2776.6666666666665,2752.0000000000005" size="100,100">(text-style:&quot;fidget&quot;)[You open up about feeling guilty that you are so often plagued with dread and stress, knowing that you are stressing over relatively small problems.]
+(set: $askMore to true)</tw-passagedata><tw-passagedata pid="39" name="guilt" tags="" position="2776,2753.6666666666665" size="100,100">(text-style:&quot;fidget&quot;)[You open up about feeling guilty that you are so often plagued with dread and stress, knowing that you are stressing over relatively small problems.]
 
 
 (text-style:&quot;fidget&quot;)[You know that so many other people are in less privileged situations than you, and that ultimately your life struggles are not the difference between life or death like others face everyday. You feel guilty to be stressed at all, and you feel guilty and greedy that you can not appreciate what you have without stressing about what more you could achieve.]
@@ -490,7 +493,7 @@ After class, you feel your stomach grumbling.
 
 
 
-(text-style:&quot;fidget&quot;)[Your therapist notes the compassion you would extend to your friend, and asks you to be more compassionate to your own self. Though it may feel unnatural and difficulat at first, slowly over time, it will encourage a shift in your mindset to be more naturally grateful and optimistic.]
+(text-style:&quot;fidget&quot;)[Your therapist notes the compassion you would extend to your friend, and asks you to be more compassionate to your own self. Though it may feel unnatural and difficult at first, slowly over time, it will encourage a shift in your mindset to be more naturally grateful and optimistic.]
 
 
 
@@ -505,7 +508,7 @@ She introduces a category of coping mechanisms called grounding techniques. Ther
 
 [[Next...|therapy]] 
 (set: $points to it + 1)
-(set: $askMore to true)</tw-passagedata><tw-passagedata pid="41" name="end session" tags="" position="3097.6666666666665,2904" size="100,100">(text-style:&quot;fidget&quot;)[You thank your therapist for her time and the talk.]
+(set: $askMore to true)</tw-passagedata><tw-passagedata pid="41" name="end session" tags="" position="3097,2904" size="100,100">(text-style:&quot;fidget&quot;)[You thank your therapist for her time and the talk.]
 
 
 (text-style:&quot;fidget&quot;)[Your therapist reminds you to try to incorporate her tips and find time for self-reflection until your next appointment. ]
@@ -513,7 +516,7 @@ She introduces a category of coping mechanisms called grounding techniques. Ther
 
 
 (if:$studyNext is true)[[[Next...|study]]](else:)[[Next...|panic]]
-(set: $askMore to false)</tw-passagedata><tw-passagedata pid="42" name="traps" tags="" position="2051.666666666667,2200.3333333333335" size="100,100">(text-style:&quot;fidget&quot;)[Your therapist points out that you have a tendency to fall for common thought traps for people who experience anxiety. Also known as cognitive distortions, these thinking patterns are exaggerated or irrational, which contribute to a greater sense of stress and danger than may be necessary. She gives you the following list of thought traps: ]
+(set: $askMore to false)</tw-passagedata><tw-passagedata pid="42" name="traps" tags="" position="2051,2200" size="100,100">(text-style:&quot;fidget&quot;)[Your therapist points out that you have a tendency to fall for common thought traps for people who experience anxiety. Also known as cognitive distortions, these thinking patterns are exaggerated or irrational, which contribute to a greater sense of stress and danger than may be necessary. She gives you the following list of thought traps: ]
 {(text-style:&quot;fidget&quot;)[* generalization: taking one isolated negative incident and believing it to be a never-ending pattern of loss and defeat]
 (text-style:&quot;fidget&quot;)[* discounting the positive/mental filter: dismissing successes, fixating on failures]
 (text-style:&quot;fidget&quot;)[* catastrophizing: assuming the worst in every scenario]
