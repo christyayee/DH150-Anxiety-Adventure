@@ -32,7 +32,13 @@ tw-story[tags~="therapy"] {
 
 a:visited {
   color: darkblue;
-}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="intro" tags="" position="2006,99" size="100,100">(alert: &quot;Hello! Inspired by Depression Quest by Zoë Quinn, the game you are about to play depicts one person&#39;s experience with generalized anxiety disorder. However, everyone who has anxiety has their own unique experiences, and the game&#39;s depiction is only one example. It is not representative or all-encompassing of all aspects of anxiety, its symptoms, or its outcomes. If you believe you are suffering from severe anxiety, recieving treatment from a mental health professional is highly encouraged before continuing. &quot;)
+}
+
+
+tw-link:hover {
+  color: black;
+}
+</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="intro" tags="" position="2006,99" size="100,100">(alert: &quot;Hello! Inspired by Depression Quest by Zoë Quinn, the game you are about to play depicts one person&#39;s experience with generalized anxiety disorder. However, everyone who has anxiety has their own unique experiences, and the game&#39;s depiction is only one example. It is not representative or all-encompassing of all aspects of anxiety, its symptoms, or its outcomes. If you believe you are suffering from severe anxiety, recieving treatment from a mental health professional is highly encouraged before continuing. &quot;)
 (text-style:&quot;fidget&quot;)[You are a student at a good school. You have great grades and close friends and are overall, outwardly successful. You have no reason to be anything other than proud and content.] 
 
 (text-style:&quot;fidget&quot;)[Everyday, however, you feel silently burdened by the constant stream of deadlines, and lose sleep over struggling to balance keeping up with your schoolwork and finding time for the things you enjoy.]
@@ -42,7 +48,7 @@ a:visited {
 [[Begin...|phase1]]
 (set: $points to 0) 
 (set: $lastGrounded to false) 
-</tw-passagedata><tw-passagedata pid="2" name="phase1" tags="" position="1998.6666666666667,246" size="100,100">(if:(history: where its name contains &quot;phase2&quot;)&#39;s length &gt;= 1)[Two weeks later...]
+</tw-passagedata><tw-passagedata pid="2" name="phase1" tags="" position="1998,246" size="100,100">(if:(history: where its name contains &quot;phase2&quot;)&#39;s length &gt;= 1)[Two weeks later...]
 
 
 (text-style:&quot;fidget&quot;)[It&#39;s Sunday, but you have a busy week ahead. You&#39;ve got a homework assignment due tomorrow, an exam, a project, and an interview all within the next few days.]
@@ -56,7 +62,7 @@ a:visited {
 
 
 (text-style:&quot;rumble&quot;)[[[Relax and watch the movies with your friends.|relax]]]
-(text-style:&quot;shudder&quot;)[[[Stay home and watch lecture.|stay]]](if:(history: where its name contains &quot;phase2&quot;)&#39;s length &gt;= 1)[Your Text Here]</tw-passagedata><tw-passagedata pid="3" name="relax" tags="" position="1922,477" size="100,100">(text-style:&quot;fidget&quot;)[Relax and watch the movies with your friends.]
+(text-style:&quot;shudder&quot;)[[[Stay home and watch lecture.|stay]]]</tw-passagedata><tw-passagedata pid="3" name="relax" tags="" position="1922,477" size="100,100">(text-style:&quot;fidget&quot;)[Relax and watch the movies with your friends.]
 
 
 (text-style:&quot;fidget&quot;)[You decide to have fun in the moment before the real grind of the week starts tomorrow. You text your friend back that you&#39;ll be there in 30 minutes, and you go watch a movie to unwind.]
@@ -480,7 +486,7 @@ After class, you feel your stomach grumbling.
 
 &lt;a href=&#39;https://adaa.org/understanding-anxiety/facts-statistics#:~:text=Anxiety%20disorders%20are%20the%20most,of%20the%20population%20every%20year&#39; target=&#39;_blank&#39;&gt;Facts and Statistics&lt;/a&gt;
 (set: $points to it + 1)
-(set: $askMore to true)</tw-passagedata><tw-passagedata pid="39" name="guilt" tags="" position="2776,2753.6666666666665" size="100,100">(text-style:&quot;fidget&quot;)[You open up about feeling guilty that you are so often plagued with dread and stress, knowing that you are stressing over relatively small problems.]
+(set: $askMore to true)</tw-passagedata><tw-passagedata pid="39" name="guilt" tags="" position="2776,2753" size="100,100">(text-style:&quot;fidget&quot;)[You open up about feeling guilty that you are so often plagued with dread and stress, knowing that you are stressing over relatively small problems.]
 
 
 (text-style:&quot;fidget&quot;)[You know that so many other people are in less privileged situations than you, and that ultimately your life struggles are not the difference between life or death like others face everyday. You feel guilty to be stressed at all, and you feel guilty and greedy that you can not appreciate what you have without stressing about what more you could achieve.]
