@@ -1,4 +1,4 @@
-# DH150-Anxiety-Adventure
+# Anxiety Adventure
 DH 150 Digital Storytelling Final Project
 
 
